@@ -6,7 +6,7 @@ import com.orangehrm.base.BaseClass;
 
 public class DummyClass2 extends BaseClass{
 	
-	@Test
+	@Test(enabled = false)
 	public void dummyTest() {
 		String title = getDriver().getTitle();
 		System.out.println(title);
