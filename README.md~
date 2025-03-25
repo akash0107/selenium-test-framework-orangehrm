@@ -1,1 +1,74 @@
 # selenium-test-framework-orangehrm
+
+OrangeHRM Selenium Java Automation Framework
+This repository contains a comprehensive Selenium WebDriver automation framework for testing OrangeHRM, an open-source HR management system. The project is written in Java and incorporates various advanced features for robust and efficient testing.
+
+Features:-
+Selenium WebDriver for web automation
+
+TestNG for test execution and parallel testing
+
+Log4j for extensive logging
+
+Data-driven testing using TestNG DataProvider
+
+Extent Reports for detailed test reporting
+
+Database testing integration
+
+Page Object Model (POM) design pattern
+
+Prerequisites
+Before running the tests, ensure you have the following installed:
+
+Java JDK 17 or higher
+
+Maven
+
+Chrome or Firefox browser
+
+OrangeHRM (locally hosted)
+https://www.youtube.com/watch?v=YZrkbYsN-Rw&t=4s
+
+Project Setup
+1.	Clone this repository:
+
+git clone https://github.com/akash0107/selenium-test-framework-orangehrm.git
+
+2.	Navigate to the project directory:
+
+cd selenium-test-framework-orangehrm
+
+3.	Install dependencies:
+
+mvn clean install
+
+Configuration
+1.	Update src/test/resources/config.properties with your OrangeHRM and database credentials.
+
+2.	Configure log4j.properties in src/test/resources for logging preferences.
+
+Running Tests
+To run the Selenium tests:
+
+mvn clean test
+
+Key Components
+
+Logging
+Log4j is integrated for comprehensive logging throughout the test execution. Configure log levels and appenders in log4j.properties.
+
+Parallel Execution
+TestNG is configured for parallel test execution. Modify testng-parallel.xml to adjust thread count and parallel mode.
+
+Data-Driven Testing
+TestNG DataProvider is used for data-driven tests. 
+
+Reporting
+Extent Reports are implemented for detailed and visually appealing test reports. Reports are generated in the test-output directory.
+
+Database Testing
+JDBC is used for database testing.
+
+
+
